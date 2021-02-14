@@ -15,6 +15,7 @@ pipeline
                 sh 'kubectl get ns'
                 sh './test-connectivity.sh'
                 sh './usr/local/bin/kubectl get ns'
+                sh 'echo $PATH'
             }
         }
     }
