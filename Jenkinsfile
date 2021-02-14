@@ -18,7 +18,7 @@ properties([
 
 node {
     checkout scm
-    load('groovy/cluster-base.groovy').run('Run', validation) {
+    {
         command = 'kubectl get ns'
         sh label: "testing connectivity", script: """
             { set -eu +x; } 2>/dev/null
