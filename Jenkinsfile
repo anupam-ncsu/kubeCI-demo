@@ -11,7 +11,7 @@ pipeline
         {
             steps
             {
-                sh 'kubeclt get ns'
+                sh 'kubectl get ns'
             }
         }
     }
