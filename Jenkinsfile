@@ -13,6 +13,7 @@ pipeline
             {
                 sh 'whoami'
                 sh 'kubectl get ns'
+                sh './test-connectivity.sh'
             }
         }
     }
