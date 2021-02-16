@@ -5,6 +5,8 @@
 # kubernetes
 kubectl get ns
 
+kubectl -n kube-system get pods
+
 
 # helm
 
